@@ -138,7 +138,7 @@ app.delete("/blogs/:id", function(req, res){
 });
 const port=3000;
 
-app.listen(port, function() {
+app.listen(process.env.PORT,process.env.IP, function() {
     console.log("==================================");
     console.log("The BlogApp Server has Started!!!");
     console.log("==================================");
